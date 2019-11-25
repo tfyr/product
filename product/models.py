@@ -16,6 +16,7 @@ class Item(models.Model):
     sostav = models.CharField(verbose_name="Состав", max_length=5250, default=None, blank=True, null=True)
     price = models.PositiveIntegerField(verbose_name="Цена", default=None, blank=True, null=True)
     oldprice = models.PositiveIntegerField(verbose_name="Перечеркнутая цена", default=None, blank=True, null=True)
+    balance = models.PositiveIntegerField(verbose_name="Остаток", default=None, blank=True, null=True)
 
     href = models.CharField(verbose_name="код для ссылки", max_length=64, unique=True, null=False, blank=False)
 
